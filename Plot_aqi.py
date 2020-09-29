@@ -1,12 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 22 16:35:01 2020
-
-@author: kuldeep sharma
-"""
-
 import pandas as pd
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
+
 
 def avg_data_2013():
     temp_i=0
@@ -158,13 +152,12 @@ if __name__=="__main__":
     plt.plot(range(0,365),lst2013,label="2013 data")
     plt.plot(range(0,364),lst2014,label="2014 data")
     plt.plot(range(0,365),lst2015,label="2015 data")
-    plt.plot(range(0,365),lst2016,label="2016 data")
-    plt.plot(range(0,365),lst2017,label="2017 data")
-    plt.plot(range(0,364),lst2018,label="2018 data")
+    plt.plot(range(0,121),lst2016,label="2016 data")
     plt.xlabel('Day')
     plt.ylabel('PM 2.5')
     plt.legend(loc='upper right')
     plt.show()
 
-    
-    
+
+
+
